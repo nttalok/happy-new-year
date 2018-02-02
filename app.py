@@ -12,5 +12,5 @@ app = Flask(__name__)
 def hello():
 	return  render_template('index.html', name=os.getenv("NAME", "world"), hostname=socket.gethostname())
 
-if __name__ == "__main__":
-	app.run()
+#if __name__ == "__main__":
+#	app.run()
