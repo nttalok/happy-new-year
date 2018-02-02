@@ -8,7 +8,7 @@ import socket
 
 application = Flask(__name__)
 
-@app.route("/")
+@application.route("/")
 def hello():
         return  render_template('index.html', name=os.getenv("NAME", "world"), hostname=socket.gethostname())
 
