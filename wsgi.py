@@ -1,5 +1,5 @@
 
-m flask import Flask
+from flask import Flask
 from flask import render_template, url_for
 
 import os
