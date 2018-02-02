@@ -6,12 +6,12 @@ import os
 import socket
 
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 @app.route("/")
 def hello():
         return  render_template('index.html', name=os.getenv("NAME", "world"), hostname=socket.gethostname())
 
 if __name__ == "__main__":
-        app.run()
+        application.run()
 
