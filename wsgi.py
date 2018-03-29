@@ -10,7 +10,7 @@ application = Flask(__name__)
 
 @application.route("/")
 def hello():
-        return  render_template('index.html', name=os.getenv("NAME", "world"), hostname=socket.gethostname())
+        return  render_template('index.html', name=os.getenv("NAME", "Customer"), hostname=socket.gethostname())
 
 if __name__ == "__main__":
         application.run()
